@@ -3,6 +3,9 @@ const addButton = document.getElementById("add-btn");
 const taskList = document.getElementById("task-list");
 const category = document.getElementById("category");   
 
+//traigo los datos y creo task
+let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
 addButton.addEventListener("click", addTask);
 
 //funcion agregar proposito o tarea y guardarlo en localstorage
