@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Kanit:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+  width: 100%;
+  font-family: "arial";
+  margin: 0;
+  padding: 0;
+  background-color: #e8e9f7;
+}
+h1 {
+  font-family: "Pacifico";
+  text-align: center;
+  margin: 20px 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  background-color: #a4aaa4;
+}
+h3 {
+  font-family: "Pacifico";
+  text-align: center;
+  margin: 20px 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+  background-color: #a4aaa4;
+}
+
+form {
+  text-align: center;
+}
+#task {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f1f1f1;
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+}
+#category {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f1f1f1;
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#add-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+#add-btn:hover {
+  background-color: #4f5e4f;
+}
+
+#task-list {
+  margin: 20px 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+  width: 99.9%;
+}
+
+#task-list li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+}
+
+#task-list :checked {
+    margin-left: 25px;
+    border: 1px solid#274266;
+  } 
+
+.delete-btn, .edit-btn, #add-btn{
+  padding: 10px 20px;
+  background-color: #274266;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-btn:hover, .edit-btn:hover{
+  background-color: #7b8d7c;
+}
+
+.buttons-container {
+  text-align: right;
+}
+
+.input-container {
+  text-align: center;
+}
+
+input[type=checkbox]
+{
+  -ms-transform: scale(1.5); 
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari y Chrome */
+  -o-transform: scale(1.5); /* Opera */
+  padding: 10px;
+  cursor: pointer;
+}
+
+/*media queriesssss*/
+@media only screen and (max-width: 828px) {
+  header {
+      width: 100%;
+  }
+  form, #task {
+      width: 100%;
+  }
+  .delete-btn, .edit-btn, #add-btn {
+      width: 100%;
+  }
+  #task-list li {
+      width: 100%;
+  }
+  /* incremento la fuente (tamaño) */
+  body {
+      font-size: 19px;
+  }
+  /* centrar el texto */
+  h1, form, #task-list li {
+      text-align: center;
+  }
+}
+.completed {
+  text-decoration: line-through;
+  color: rgb(128, 128, 128);
+  text-align: right;
+  border: 3px solid rgb(10, 10, 10);
+}
+::placeholder {
+  color: rgb(106, 172, 173);
+  font-size: 1.5em;
+  font-family: "Pacifico";
+}
