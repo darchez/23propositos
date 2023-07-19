@@ -69,6 +69,7 @@ function render() {
       //label sucess
       const label1 = document.createElement("label")
       label1.innerText="Sucess"
+      abel1.style.color="gray"
       //check completo
       const checkbox = document.createElement("input")
       checkbox.type = "checkbox"
@@ -81,7 +82,7 @@ function render() {
             label1.style.color="green"
         } else {
             taskEl.classList.remove("completed")
-            label1.style.color="black"
+            label1.style.color="gray"
         }
       });
       
