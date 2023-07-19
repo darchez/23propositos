@@ -25,7 +25,7 @@ function addTask(){
       }
       if  (category.value === ""){
         alert("No ha ingresado caterogia")
-        category.value = "proposito"
+        category.value = "Sin categoría"
       }
       tasks.push({name: taskInput.value, completed: false, categoria: category.value})
       localStorage.setItem('tasks', JSON.stringify(tasks))
