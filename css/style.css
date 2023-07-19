@@ -2,14 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 body {
+
   width: 100%;
   font-family: "arial";
   margin: 0;
   padding: 0;
   background-color: #e8e9f7;
 }
+button {
+  border-radius: 10%;
+  padding: 1%;
+  margin: 1%;
+  width: 90px;
+}
 h1 {
-  font-family: "Pacifico";
+  font-family:Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-align: center;
   margin: 20px 0;
   font-size: 30px;
@@ -18,7 +25,7 @@ h1 {
   background-color: #a4aaa4;
 }
 h3 {
-  font-family: "Pacifico";
+  font-family: "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif";
   text-align: center;
   margin: 20px 0;
   font-size: 15px;
@@ -136,6 +143,12 @@ input[type=checkbox]
   h1, form, #task-list li {
       text-align: center;
   }
+  button {
+    border-radius: 10%;
+    padding: 1%;
+    margin: 1%;
+    width: 40px;
+  }
 }
 .completed {
   text-decoration: line-through;
@@ -144,7 +157,7 @@ input[type=checkbox]
   border: 3px solid rgb(10, 10, 10);
 }
 ::placeholder {
-  color: rgb(106, 172, 173);
+  color: rgb(190, 190, 190);
   font-size: 1.5em;
-  font-family: "Pacifico";
+  font-family: "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif";
 }

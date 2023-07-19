@@ -79,7 +79,9 @@ function render() {
             taskEl.classList.remove("completed")
         }
       });
-
+      const label1 = document.createElement("label")
+      label1.innerText="Sucess"
+      buttonsContainer.appendChild(label1)
       buttonsContainer.appendChild(checkbox)
       taskEl.appendChild(buttonsContainer)
       taskList.appendChild(taskEl)
