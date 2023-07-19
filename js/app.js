@@ -66,6 +66,9 @@ function render() {
         editTask(index);
       });
       buttonsContainer.appendChild(editButton);
+      //label sucess
+      const label1 = document.createElement("label")
+      label1.innerText="Sucess"
       //check completo
       const checkbox = document.createElement("input")
       checkbox.type = "checkbox"
@@ -75,12 +78,13 @@ function render() {
         localStorage.setItem('tasks', JSON.stringify(tasks))
         if (this.checked) {
             taskEl.classList.add("completed")
+            label1.style.color="green"
         } else {
             taskEl.classList.remove("completed")
+            label1.style.color="black"
         }
       });
-      const label1 = document.createElement("label")
-      label1.innerText="Sucess"
+      
       buttonsContainer.appendChild(label1)
       buttonsContainer.appendChild(checkbox)
       taskEl.appendChild(buttonsContainer)
