@@ -107,7 +107,7 @@ function deleteTask(index) {
     if (newTask) {
       tasks[index].name = newTask
       if (!newTask2) {
-        tasks[index].categoria = "proposito"; //por defecto
+        tasks[index].categoria = "Sin categoría"; //por defecto
       } else {
         tasks[index].categoria = newTask2
       }
