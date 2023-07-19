@@ -69,7 +69,7 @@ function render() {
       //label sucess
       const label1 = document.createElement("label")
       label1.innerText="Sucess"
-      abel1.style.color="gray"
+      label1.style.color="gray"
       //check completo
       const checkbox = document.createElement("input")
       checkbox.type = "checkbox"
